@@ -1,8 +1,12 @@
 echo "Detect Environment"
 
 echo " "$(getconf LONG_BIT)"-bit architecture"
-
 python --version
+echo " "
+echo " This should now see if yoai is installed and running"
+echo " if not, it will pull the repo:  https://git.io/psyai"
+echo " Once repo is local detect, it will copy alias and init"
+echo " then it runs additional inspect command"
 # get conditional check if kubernetes live:
 # run and install 
 # http://storage.googleapis.com/kubernetes-release/release/v1.3.0/bin/darwin/amd64/kubectl && chmod +x kubectl && sudo mv kubectl /usr/local/bin/
