@@ -14,8 +14,7 @@ echo " then it runs additional inspect command"
 # run minikube:
 # minikube start
 # after it starts, it detects its own repo, git clones and unzips more stuff
-# 
-# install 
+
 
 
 
@@ -53,8 +52,11 @@ fi
 minikube start
 
 # run default test fleet 
-kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
-kubectl expose deployment hello-minikube --type=NodePort
+# kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
+# kubectl expose deployment hello-minikube --type=NodePort
+
+# install   Autocompletion for kubectl
+source <(kubectl completion bash) # setup autocomplete in bash, bash-completion package should be installed first.
 
 
 # We have now launched an echoserver pod but we have to wait until the pod is up before curling/accessing it
