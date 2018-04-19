@@ -15,6 +15,9 @@ BLACK='\033[0;30m'
 NC='\033[0m' # No Color
 printf "${BLACK}DETECT: ${RED}modules${BLACK} Linux\n"
 
+
+printf "${RED}"$(getconf LONG_BIT)"-bit architecture"
+
 echo "Running Detect..."
 echo "Should print cool color graphics"
 echo "Should print universal OS version"
