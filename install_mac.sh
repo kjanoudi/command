@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
 
+# ADD THIS TO .bash_profile or .zshrc  FOR COLOR FOLDERS
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
 source ./lib_sh/echos.sh
 source ./lib_sh/requirers.sh
 
